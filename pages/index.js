@@ -1,6 +1,6 @@
 import Router from "next/router";
 import Link from "next/link";
-import { MainLayout } from "../LayOut/MainLayOut";
+import { MainLayout } from "../Layout/MainLayout";
 
 export default function Home() {
   const goToAuthHandler = () => {

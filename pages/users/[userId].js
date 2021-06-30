@@ -1,5 +1,7 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import Router from "next/router";
+
+import { MainLayout } from "../../Layout/MainLayout";
 export default function User() {
   const router = useRouter();
 
@@ -8,9 +10,9 @@ export default function User() {
   };
 
   return (
-    <>
+    <MainLayout>
       <h2> User {router.query.userId}</h2>
       <button onClick={goToHomeHandler}>Go to Home</button>
-    </>
+    </MainLayout>
   );
 }

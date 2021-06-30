@@ -17,7 +17,7 @@ export function MainLayout({ children }) {
           <a className={s["navigationLink"]}>Users</a>
         </Link>
       </nav>
-      <main>{children}</main>
+      <main className={s.container}>{children}</main>
     </>
   );
 }

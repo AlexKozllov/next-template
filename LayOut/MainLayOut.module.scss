@@ -1,0 +1,15 @@
+.navigation{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: darkblue;
+
+}
+
+.navigationLink{
+    font-family: Roboto;
+    font-size: 20px ;
+    color: aliceblue;
+}

@@ -1,5 +1,6 @@
 import Router from "next/router";
 import { useState } from "react";
+import { MainLayout } from "../LayOut/MainLayOut";
 
 const initialState = {
   name: "Alex",
@@ -22,7 +23,7 @@ export default function Authorisation() {
   };
 
   return (
-    <>
+    <MainLayout>
       <h2>Autharisation page</h2>
       <button onClick={goToHomeHandler}>Go to Home</button>
       <div>
@@ -36,6 +37,6 @@ export default function Authorisation() {
       <div>
         <button onClick={decrementYearHandler}>Less Yars</button>
       </div>
-    </>
+    </MainLayout>
   );
 }
